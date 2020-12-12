@@ -1,0 +1,61 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.centradol1{
+  margin-left: 500px;
+  margin-right: auto;
+}
+.centradol2{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 210px;
+}
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: white;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.mat-drawer {
+  background-color: black;
+}
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+.mat-list-base{
+  width: 250px;
+  background-color: black;
+}
+.mat-list-base, .mat-list-item, .mat-list-item-content, .mat-list-base, .mat-list-option, .mat-list-item-content{
+  color:white;
+}
+.mat-toolbar.mat-primary{
+  background-color:#EDEDED;
+}
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}

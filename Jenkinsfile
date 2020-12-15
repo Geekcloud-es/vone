@@ -12,8 +12,8 @@ pipeline {
   stages {
     stage('Initialize') {
       agent {
-        docker {
-          image 'node:latest'
+        node {
+          label 'lts'
         }
 
       }
